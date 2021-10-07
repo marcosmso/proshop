@@ -127,6 +127,3 @@ export const userUpdateReducer = (state = {user: {}}, action) => {
       return state
   }
 }
-
-
-
