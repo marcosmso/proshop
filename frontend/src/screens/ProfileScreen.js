@@ -103,7 +103,7 @@ const ProfileScreen = ({ history }) => {
               ></Form.Control>
           </Form.Group>
 
-          <Button type='submit' variant='primary'>Update</Button>
+          <Button className='mt-3' type='submit' variant='primary'>Update</Button>
         </Form>
       </Col>
       <Col md={9}>

@@ -124,10 +124,10 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-          <Row>
+          <Row className='mt-3'>
             <Col md={6}>
               <h2>Reviews</h2>
-              { product.reviews.length === 0 && <Message>No reviews</Message> }
+              { product.reviews.length === 0 && <Message variant='primary'>No reviews</Message> }
               <ListGroup variant='flush'>
                 {product.reviews.map( review => (
                   <ListGroup.Item key={review._id}>
@@ -165,7 +165,7 @@ const ProductScreen = ({ history, match }) => {
                       <Button className='mt-3' type='submit' variant='primary'>Submit</Button>
                     </Form>
                   ) : (
-                    <Message>
+                    <Message variant='primary'>
                       Please <Link to='/login'>sign in</Link> to write a review
                       {' '}
                     </Message>

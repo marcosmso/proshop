@@ -83,7 +83,7 @@ const UserEditScreen = ({ match, history }) => {
               onChange={(e)=>setIsAdmin(e.target.checked)}
               ></Form.Check>
           </Form.Group>
-          <Button type='submit' variant='primary'>Update</Button>
+          <Button className='mt-3' type='submit' variant='primary'>Update</Button>
         </Form>
         )}
       </FormContainer>
