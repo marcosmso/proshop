@@ -64,7 +64,7 @@ const OrderScreen = ({match, history}) => {
         setSdkReady(true)
       }
     }
-  }, [dispatch, orderId, successPay, order, successDeliver])
+  }, [dispatch, orderId, successPay, order, successDeliver, userInfo, history])
 
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult)
@@ -184,7 +184,7 @@ const OrderScreen = ({match, history}) => {
                   {loadingDeliver && <Loader />}
                   {userInfo && userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                     <ListGroup.Item>
-                      <Button className='mt-3' type='button' className='btn btn-block' onClick={deliverHandler}>
+                      <Button type='button' className='mt-3 btn btn-block' onClick={deliverHandler}>
                         Mark As Delivered
                       </Button>
                     </ListGroup.Item>
