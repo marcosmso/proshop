@@ -19,7 +19,7 @@ const Header = () => {
     <header>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <LinkContainer to='/'><Navbar.Brand>ProShop</Navbar.Brand></LinkContainer>
+          <LinkContainer to='/'><Navbar.Brand>React Shop Store</Navbar.Brand></LinkContainer>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
